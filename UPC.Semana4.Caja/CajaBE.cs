@@ -10,5 +10,6 @@ namespace UPC.Semana4.Caja
     {
         public string id_caja { get; set; }
         public string nombre_cajero { get; set; }
+        public List<CompraBE> compras { get; set; } = new List<CompraBE>();
     }
 }
