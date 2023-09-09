@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UPC.Semana4.Caja
 {
-    public class u202019858{
+    public  class u202019858{
 
     }
 }
