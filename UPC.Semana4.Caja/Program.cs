@@ -10,6 +10,13 @@ namespace UPC.Semana4.Caja
     {
         static void Main(string[] args)
         {
+            var solucion = new pciscroj();
+            var cajas = solucion.CrearSistemaDeCajas(4);
+            for(int i = 0; i < cajas.Count; i++)
+            {
+                Console.WriteLine(cajas[i].id_caja + ": " + cajas[i].nombre_cajero);
+            }
+            Console.ReadLine();
         }
     }
 }
