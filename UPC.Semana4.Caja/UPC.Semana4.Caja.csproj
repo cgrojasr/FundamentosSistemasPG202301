@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="CajaBE.cs" />
     <Compile Include="CompraBE.cs" />
+    <Compile Include="pciscroj.cs" />
+    <Compile Include="PersonaBE.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="u202019858.cs" />
