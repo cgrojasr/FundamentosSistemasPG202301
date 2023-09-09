@@ -21,5 +21,15 @@ namespace UPC.Semana4.Caja
 
             return cajas;
         }
+
+        public void RegistrarCompraEnCaja(CompraBE objCompra, CajaBE objCaja)
+        {
+            objCompra.fecha = DateTime.Now;
+            objCaja.compras.Add(objCompra);
+            Console.WriteLine("La compra se ha realizado a las " + objCompra.fecha.ToString("dd/MM/yyyy HH:mm"));
+            Console.WriteLine("con nro documento: " + objCompra.nro_documento);
+            Console.WriteLine("por un monto de; " + objCompra.monto_compra);
+            Console.WriteLine(String.Format("La {0} tiene {1} compras", objCaja.id_caja, objCaja.compras.Count));
+        }
     }
 }
