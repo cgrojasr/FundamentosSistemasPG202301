@@ -12,7 +12,7 @@ namespace UPC.Semana5.ColasYPilas
         {
             //Colas();
             //Pilas();
-            
+            u202019858();
         }
 
         static void Colas() {
@@ -73,13 +73,14 @@ namespace UPC.Semana5.ColasYPilas
         static void u812125() { 
         }
 
-        public class Paciente
+        public class Paciente_u202019858
         {
             public int id_paciente { get; set; }
             public string nombre { get; set; }
+            public int edad { get; set; }
         }
         static void u202019858(){
-            var pacientes = new Queue<Paciente>();
+            var pacientes = new Queue<Paciente_u202019858>();
             while (true){
                 Console.Clear();
                 Console.WriteLine("1.- Agregar paciente");
@@ -91,9 +92,10 @@ namespace UPC.Semana5.ColasYPilas
 
                 //Agregar
                 if (op==1){
-                    var paciente = new Paciente();
+                    var paciente = new Paciente_u202019858();
                     Console.WriteLine("-------------------------------");
                     Console.Write("Nombre: "); paciente.nombre = Console.ReadLine();
+                    Console.Write("Edad: "); paciente.edad = int.Parse(Console.ReadLine());
                     paciente.id_paciente = pacientes.Count()+1;
                     pacientes.Enqueue(paciente);
                 }
@@ -101,11 +103,11 @@ namespace UPC.Semana5.ColasYPilas
                 else if (op == 2){
                     Console.WriteLine("-------------------------------");
                     ///---
-                    ///..............
+                    pacientes = new Queue<Paciente_u202019858>(pacientes.OrderByDescending(paciente => paciente.edad));
                     ///---
                     while (pacientes.Count > 0){
                         var paciente = pacientes.Dequeue();
-                        Console.WriteLine("Paciente: "+paciente.nombre);
+                        Console.WriteLine("Id: " + paciente.id_paciente+", Paciente: " +paciente.nombre+ ", Edad: " + paciente.edad);
                     }
                     Console.WriteLine("-------------------------------");
                     Console.WriteLine("Presione una tecla para continuar . . .");Console.ReadKey();
