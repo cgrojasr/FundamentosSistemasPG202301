@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.Fundamentos.Console", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.Semana4.Caja", "UPC.Semana4.Caja\UPC.Semana4.Caja.csproj", "{4A4037C4-F031-4227-9AC6-1A6F1AE16253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.Semana5.ColasYPilas", "UPC.Semana5.ColasYPilas\UPC.Semana5.ColasYPilas.csproj", "{3F08DB34-1174-4E7E-BCA3-C5575CEB964E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4A4037C4-F031-4227-9AC6-1A6F1AE16253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A4037C4-F031-4227-9AC6-1A6F1AE16253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A4037C4-F031-4227-9AC6-1A6F1AE16253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F08DB34-1174-4E7E-BCA3-C5575CEB964E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F08DB34-1174-4E7E-BCA3-C5575CEB964E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F08DB34-1174-4E7E-BCA3-C5575CEB964E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F08DB34-1174-4E7E-BCA3-C5575CEB964E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
