@@ -11,7 +11,8 @@ namespace UPC.Semana5.ColasYPilas
         static void Main(string[] args)
         {
             //Colas();
-            Pilas();
+            //Pilas();
+            
         }
 
         static void Colas() {
@@ -53,7 +54,7 @@ namespace UPC.Semana5.ColasYPilas
             libros.Push("Cien años de soledad");
             libros.Push("La historia de la corrupción en el Perú");
             libros.Push("La biblia");
-
+            
             Console.WriteLine(libros.Peek());
 
             while (libros.Count > 0)
@@ -70,6 +71,50 @@ namespace UPC.Semana5.ColasYPilas
         //PROHIBIDO USAR ARREGLOS Y LISTAS
 
         static void u812125() { 
+        }
+
+        public class Paciente
+        {
+            public int id_paciente { get; set; }
+            public string nombre { get; set; }
+        }
+        static void u202019858(){
+            var pacientes = new Queue<Paciente>();
+            while (true){
+                Console.Clear();
+                Console.WriteLine("1.- Agregar paciente");
+                Console.WriteLine("2.- Atender paciente");
+                Console.WriteLine("3.- Salir");
+                Console.WriteLine();
+                Console.WriteLine("-------------------------------");
+                Console.Write("Opcion: "); int op= int.Parse(Console.ReadLine());
+
+                //Agregar
+                if (op==1){
+                    var paciente = new Paciente();
+                    Console.WriteLine("-------------------------------");
+                    Console.Write("Nombre: "); paciente.nombre = Console.ReadLine();
+                    paciente.id_paciente = pacientes.Count()+1;
+                    pacientes.Enqueue(paciente);
+                }
+                //Atender
+                else if (op == 2){
+                    Console.WriteLine("-------------------------------");
+                    ///---
+                    ///..............
+                    ///---
+                    while (pacientes.Count > 0){
+                        var paciente = pacientes.Dequeue();
+                        Console.WriteLine("Paciente: "+paciente.nombre);
+                    }
+                    Console.WriteLine("-------------------------------");
+                    Console.WriteLine("Presione una tecla para continuar . . .");Console.ReadKey();
+                }
+                //Salir
+                else if (op == 3){
+                    break;
+                }
+            }
         }
     }
 }
