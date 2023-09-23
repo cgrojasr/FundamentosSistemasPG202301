@@ -51,7 +51,7 @@ namespace UPC.Semana5.ColasYPilas
 
         static void Pilas() { 
             Stack<string> libros = new Stack<string>();
-            libros.Push("Cien años de soledad");
+            libros.Push("Cien años de soledadd");
             libros.Push("La historia de la corrupción en el Perú");
             libros.Push("La biblia");
             
